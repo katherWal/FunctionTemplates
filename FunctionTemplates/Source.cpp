@@ -17,3 +17,16 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+
+template <typename T>
+T half(T num) {
+	if (num = float || num = double) {
+		return (num / 2);
+	}
+	else if (num = int) {
+		float conv = static_cast<int>(num);
+		return round(conv / 2);
+
+	}
+}
