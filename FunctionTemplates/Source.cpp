@@ -9,8 +9,11 @@ using namespace std;
 
 template <typename T>
 T half(T num);
+
 template<>
-int half(int num);
+int half(int num); //explicit instantiation-- overwrites the above for an explicit type
+
+char character(char start, int offset);
 
 int main() {
 	double a = 7.0;
@@ -31,6 +34,7 @@ template <typename T>
 T half(T num) {
 		return (num / 2);
 }
+
 template<>
 int half(int num) {
 	float conv = static_cast<int>(num);
